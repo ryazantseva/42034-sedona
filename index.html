@@ -7,12 +7,12 @@
   <body>
   	<header class="main-header">
   		<nav class="main-nav">
-  		<a><img class="logo" src="img/logotip.svg" width="135" height="70" alt="Логотип Седоны"></a>
+  		<a href="42034-sedona/index.html"><img class="logo" src="img/logotip.svg" width="135" height="70" alt="Логотип Седоны"></a>
   			<ul class="main-nav-list">
-  				<li><a>Информация</a></li>	
-  				<li><a>Фото и видео</a></li>
-  				<li><a>Карта штата</a></li>
-  				<li><a>Гостиницы</a></li>
+  				<li><a href="#">Информация</a></li>	
+  				<li><a href="#">Фото и видео</a></li>
+  				<li><a href="#">Карта штата</a></li>
+  				<li><a href="42034-sedona/inner.html">Гостиницы</a></li>
   			</ul>
   		</nav>	
   	</header>
@@ -96,19 +96,26 @@
   			 	<div class="search-form">
   			 		<p>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</p>
   			 		<form class="hotels-search-action" method="get" action="https:echo.htmlacademy.ru">
-  			 			<label for="entry-date">ДАТА ЗАЕЗДА</label>
-  			 			<input type="date" name="entry-date" id="entry-date">
-  			 			<!--Календарики же стилями сделаем?-->
-  			 			<label for="departure-date">ДАТА ВЫЕЗДА</label>
-  			 			<input type="date" name="departure-date" id="departure-date">
-  			 			<label for="adult-count">ВЗРОСЛЫЕ</label>
-  			 				<button type="button">-</button>
-  			 			<input type="number" name="adult-count" id="adult-count">
-  			 				<button type="button">+</button>
-  			 			<label for="children-count">ДЕТИ</label>
-  			 				<button type="button">-</button>
-  			 			<input type="number" name="children-count" id="children-count">
-  			 				<button type="button">+</button>
+  			 			<div class="row">
+  			 				<label for="entry-date">ДАТА ЗАЕЗДА</label>
+  			 				<input type="date" name="entry-date" id="entry-date">
+  			 			</div>
+  			 			<div class="row">
+  			 				<label for="departure-date">ДАТА ВЫЕЗДА</label>
+  			 				<input type="date" name="departure-date" id="departure-date">
+  			 			</div>
+  			 			<div class="row">
+  			 				<label for="adult-count">ВЗРОСЛЫЕ</label>
+  			 					<div class="button-sign"><button type="button">-</button></div>
+  			 				<input type="number" name="adult-count" id="adult-count">
+  			 					<div class="button-sign"><button type="button">+</button></div>
+  			 			</div>
+  			 			<div class="row">
+  			 				<label for="children-count">ДЕТИ</label>
+  			 					<div class="button-sign"><button type="button">-</button></div>
+  			 				<input type="number" name="children-count" id="children-count">
+  			 					<div class="button-sign"><button type="button">+</button></div>
+  			 			</div>
   			 			<input type="submit" value="НАЙТИ">
   			 		</form>
   			 	</div>	
@@ -116,13 +123,13 @@
   		</section>	
   	</main>
   	<footer class="main-footer">
-  		<a class="footer-hashtag">#VISITSEDONA</a>
+  		<a class="footer-hashtag" href="#">#VISITSEDONA</a>
   			<ul class="social-list">
-  				<li><a href="URL">Tvitter</a></li>
-  				<li><a href="URL">Facebook</a></li>
-  				<li><a href="URL">YourTube</a></li>
+  				<li><a href="#">Tvitter</a></li>
+  				<li><a href="#">Facebook</a></li>
+  				<li><a href="#">YourTube</a></li>
   			</ul>
-        <a><img src="URL" alt="html academy"</a>
+        <a href="https://htmlacademy.ru/"><img src="URL" alt="html academy"</a>
   	</footer>
    </body>
 </html>
