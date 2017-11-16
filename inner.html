@@ -19,17 +19,39 @@
     <main>
      <h1>Выбор отеля</h1>
       <section class="hotels-parameters">
-        <h2>ИНФРАСТРУКТУРА</h2>
-        <!--Здесь будет чек-бокс-->
-        <h2>ТИП ЖИЛЬЯ</h2>
-        <!--Здесь будет чек-бокс-->
-        <h2>СТОИМОСТЬ В СУТКИ (Р):</h2>
+        <div class="selection">
+          <h2>ИНФРАСТРУКТУРА</h2>
+          <form name="infrastructure" method="get" action="https:echo.htmlacademy.ru">
+            <input type="checkbox" name="pool" id="pool" checked>
+            <label for="pool">БАССЕЙН</label>
+            <input type="checkbox" name="parking" id="parking">
+            <label for="parking">ПАРКОВКА</label>
+            <input type="checkbox" name="wi-fi" id="wi-fi" checked>
+            <label for="wi-fi">WI-FI</label>
+          </form>
+        </div>
+        <div class="selection">
+          <h2>ТИП ЖИЛЬЯ</h2>
+          <form name="type-of-house" method="get" action="https:echo.htmlacademy.ru">
+            <input type="checkbox" name="hotel" id="hotel" checked>
+            <label for="pool">ГОСТИНИЦА</label>
+            <input type="checkbox" name="motel" id="motel" checked>
+            <label for="parking">МОТЕЛЬ</label>
+            <input type="checkbox" name="apartments" id="apartments" checked>
+            <label for="wi-fi">АПАРТАМЕНТЫ</label>
+          </form>
+        </div>
+        <div class="selection-range">
+          <h2>СТОИМОСТЬ В СУТКИ (Р):</h2>
           <P>ОТ 0</P>
           <P>ДО 3000</P>
           <span>
-            <!--Для интерактивного элемента-->
+            <form name="price-range" method="get" action="https:echo.htmlacademy.ru">
+              <input type="range" min="0" max="3000" step="1">
+            </form>
           </span>
           <a class="buttom" href="URL">Показать</a>
+        </div>  
       </section>
       <section class="hotels-sort">
         <b>НАЙДЕНО: 3</b>

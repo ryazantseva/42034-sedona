@@ -91,9 +91,27 @@
 			</div>		
   		</section>
   		<section class="hotels-search">
-  			 	<h2 class="reason-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-  			 	<p class="reason-text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-  			 	<!--Здесь будет форма-->
+  			<h2 class="reason-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+  			 <p class="reason-text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+  			 	<div class="search-form">
+  			 		<p>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</p>
+  			 		<form class="hotels-search-action" method="get" action="https:echo.htmlacademy.ru">
+  			 			<label for="entry-date">ДАТА ЗАЕЗДА</label>
+  			 			<input type="date" name="entry-date" id="entry-date">
+  			 			<!--Календарики же стилями сделаем?-->
+  			 			<label for="departure-date">ДАТА ВЫЕЗДА</label>
+  			 			<input type="date" name="departure-date" id="departure-date">
+  			 			<label for="adult-count">ВЗРОСЛЫЕ</label>
+  			 				<button type="button">-</button>
+  			 			<input type="number" name="adult-count" id="adult-count">
+  			 				<button type="button">+</button>
+  			 			<label for="children-count">ДЕТИ</label>
+  			 				<button type="button">-</button>
+  			 			<input type="number" name="children-count" id="children-count">
+  			 				<button type="button">+</button>
+  			 			<input type="submit" value="НАЙТИ">
+  			 		</form>
+  			 	</div>	
   			<img class="map-sedona" src="img/map.jpg" width="1200" height="475" alt="Карта Седоны">
   		</section>	
   	</main>
