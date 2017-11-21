@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -41,14 +43,14 @@
           <fieldset>
             <legend>СТОИМОСТЬ В СУТКИ (Р):
               <div>
-                <span>ОТ 0</span>
-                <span>ДО 3000</span>
+                <span class="cost">ОТ 0</span>
+                <span class="cost">ДО 3000</span>
               </div>
             </legend>
             <input type="range" min="0" max="3000" step="1">
           </fieldset>
         </form>
-        <button type="button" class="button">Показать</button>
+        <button type="button" class="button button-transperent">Показать</button>
       </section>
       <section class="hotels-sort">
         <b>НАЙДЕНО: 3</b>
@@ -69,7 +71,7 @@
                 <span class="hotel-text">ГОСТИНИЦА</span>
                 <span class="hotel-text">ОТ 4000 Р.</span>
                 <a class="button" href="#">ПОДРОБНЕЕ</a>
-                <a class="button" href="#">ЗАБРОНИРОВАТЬ</a>
+                <a class="button button-dark" href="#">ЗАБРОНИРОВАТЬ</a>
               </div>  
               <div class="hotel-rating">
                 <img src="URL" alt="Количество звезд">
@@ -83,7 +85,7 @@
                 <span class="hotel-text">МОТЕЛЬ</span>
                 <span class="hotel-text">ОТ 3000 Р.</span>
                 <a class="button" href="#">ПОДРОБНЕЕ</a>
-                <a class="button" href="#">ЗАБРОНИРОВАТЬ</a>
+                <a class="button button-dark" href="#">ЗАБРОНИРОВАТЬ</a>
               </div>
               <div class="hotel-rating">
                 <img src="URL" alt="Количество звезд">  
@@ -97,7 +99,7 @@
                 <span class="hotel-text">АПАРТАМЕНТЫ</span>
                 <span class="hotel-text">ОТ 2000 Р.</span>
                 <a class="button" href="#">ПОДРОБНЕЕ</a>
-                <a class="button" href="#">ЗАБРОНИРОВАТЬ</a>
+                <a class="button button-dark" href="#">ЗАБРОНИРОВАТЬ</a>
               </div>
               <div class="hotel-rating">
                 <img src="URL" alt="Количество звезд">

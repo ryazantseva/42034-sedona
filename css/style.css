@@ -1,0 +1,357 @@
+body{
+	margin:0;
+	padding:0;
+
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+}
+
+a{
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover{
+	color: #81b3d2;
+}
+a:focus{
+	color: #b2b2b2;
+}
+a:active{
+	color: #766357;
+}
+
+.main-nav-list a{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+}
+
+.main-foto{
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.reason-main-title{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+}
+
+.reason-main-text{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+}
+
+.reason-title{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+}
+
+.reason-text{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+}
+
+.reason-title-white,
+.reason-text-white{
+	color: #ffffff;
+
+	background-color: #81b3d2;
+}
+
+.reason-title-grey,
+.reason-text-grey{
+ 	background-color: #eeeeee;
+}
+
+.reason-title-icon1::before{
+	content: "";
+	background-image: url("icon-1.svg");
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+}
+
+.reason-title-icon2::before{
+	content: "";
+	background-image: url("icon-2.svg");
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+}	
+
+.reason-title-icon3::before{
+	content: "";
+	background-image: url("icon-3.svg");
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+}
+
+.reason-footer-title{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+}
+
+.reason-footer-text{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+}
+
+.search-form-row{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.search-form-row input{
+	background-color: #f2f2f2;
+}
+
+.search-form-row input:hover{
+	background-color: #ebebeb;
+}
+.search-form-row input:focus{
+	background-color: #ffffff;
+	border-color: #e5e5e5;
+}
+
+.button{
+	font: inherit;
+
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	background-color: #81b3d2;
+	border: none;
+}
+
+.button:hover{
+	background-color: #669ec0;
+}
+.button:focus{
+	color: #88b6d1;
+	background-color: #5496bd;
+}
+
+.button-dark{
+	background-color: #766357;
+}
+
+.button-dark:hover{
+	background-color: #604e43;
+}
+.button-dark:focus{
+	background-color: #503e33;
+}
+.button-search{
+	line-height: 26px;
+	font-weight: 700;
+}
+
+.button-decrease{
+	color: #a9a9a9;
+}
+
+.button-decrease:hover{
+	color: #000000;
+}
+.button-decrease:focus{
+	color: #81b3d2;
+}
+
+.button-transperent{
+	background: rgba(255, 255, 255, 0.5);
+	border: 2px solid #ffffff;
+}
+
+.button-transperent:hover{
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.hotels-parameters{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;
+
+	background-color: #749ec1;
+	background-image: url("background2.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.hotels-parameters input,
+.hotels-parameters input:hover{
+	border-color: #ffffff;
+}
+
+.cost{
+	border-color: #ffffff;
+}
+
+.hotels-sort a{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #b2b2b2;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+}
+
+.hotels-sort a:hover{
+	color: #81b3d2;
+}
+
+.hotels-sort a:focus{
+	color: #000000;
+}
+
+.hotels-sort a:active{
+	color: #81b3d2;
+}
+
+.hotel-title{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+}
+
+.hotel-title:hover{
+	color: #81b3d2;
+}
+
+.hotel-title:focus{
+	color: #b2b2b2;
+}
+
+.hotel-text{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+}
+
+.hotel-text-blue{
+	background-color: #f2f2f2;
+}
+
+.social-list a{
+	width: 48px;
+	height: 48px;
+
+	background-color: #82b3d3;
+}
+.social-list a:hover{
+	background-color: #669ec0;
+}
+.social-list a:active{
+	background-color: #5496bd;
+}
+
+.twitter{
+	background-image: url("twitter.svg");
+	background-position: center center;
+}
+.twitter:active{
+	background-image: url("twitter-dark.svg");
+	background-position: center center;
+}
+.facebook{
+	background-image: url("fb-icon.svg");
+	background-position: center center;
+}
+.facebook:active{
+	background-image: url("fb-icon-dark.svg");
+	background-position: center center;
+}	
+.YouTube{
+	background-image: url("youtube.svg");
+	background-position: center center;
+}
+.YouTube:active{
+	background-image: url("youtube-dark.svg");
+	background-position: center center;
+}
+.logo-htmlacademy{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+	background-image: url("logo-htmlacademy.svg");
+}
+.logo-htmlacademy:hover{
+	background-image: url("logo-htmlacademy-blue.svg");
+}
+.logo-htmlacademy:focus{
+	background-image: url("logo-htmlacademy-grey.svg");
+}

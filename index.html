@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header">
@@ -22,8 +25,8 @@
   			<img class="main-foto" src="img/main-foto1.png" width="1200" height="510" alt="Фото Седоны">
   		</section>
   		<section class="reasons">
-  		  		<h2 class="reason-title">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
-  				<p class="reason-text">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД-КАНЬОН!</p>
+  		  		<h2 class="reason-main-title">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+  				<p class="reason-main-text">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД-КАНЬОН!</p>
   			<div class="reasons-list">
   				<div class="reasons-list-row">
   					<div class="reason">
@@ -38,19 +41,19 @@
   				<div class="reasons-list-row">
   					<div class="reason">
   						<div class="reason-inner">
-  							<b class="reason-title reason-title-icon">ЖИЛЬЕ</b>
+  							<b class="reason-title reason-title-icon reason-title-icon1">ЖИЛЬЕ</b>
   							<p class="reason-text">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
   						</div>
   					</div>
   					<div class="reason">
   						<div class="reason-inner">
-  							<b class="reason-title reason-title-icon">ЕДА</b>
+  							<b class="reason-title reason-title-icon reason-title-icon2">ЕДА</b>
   							<p class="reason-text">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
   						</div>
   					</div>
   					<div class="reason">
   						<div class="reason-inner">
-  							<b class="reason-title reason-title-icon">СУВЕНИРЫ</b>
+  							<b class="reason-title reason-title-icon reason-title-icon3">СУВЕНИРЫ</b>
   							<p class="reason-text">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
   						</div>
   					</div>
@@ -68,22 +71,22 @@
   				<div class="reasons-list-row">
   					<div class="reason">
   						<div class="reason-inner">
-  							<b class="reason-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
-  							<span class="reason-text">- №3 -</span>
+  							<b class="reason-title reason-title-grey">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
+  							<span class="reason-text reason-text-grey">- №3 -</span>
   							<p class="reason-text">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
   						</div>
   					</div>
   					<div class="reason">
   						<div class="reason-inner">
-  							<b class="reason-title">КРАСИВАЯ ДОРОГА</b>
-  							<span class="reason-text">- №4 -</span>
+  							<b class="reason-title reason-title-grey">КРАСИВАЯ ДОРОГА</b>
+  							<span class="reason-text reason-text-grey">- №4 -</span>
   							<p class="reason-text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
   						</div>
   					</div>
   					<div class="reason">
   						<div class="reason-inner">
-  							<b class="reason-title">МАЛО ТУРИСТОВ</b>
-  							<span class="reason-text">- №5 -</span>
+  							<b class="reason-title reason-title-grey">МАЛО ТУРИСТОВ</b>
+  							<span class="reason-text reason-text-grey">- №5 -</span>
   							<p class="reason-text">БОЛЬШИНСТВО ЕДЕТ В ГРАНД-КАНЬОН И ТОЛПИТСЯ ТАМ</p>
   						</div>
   					</div>
@@ -91,10 +94,10 @@
 			</div>		
   		</section>
   		<section class="hotels-search">
-  			<h2 class="reason-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-  			 <p class="reason-text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+  			<h2 class="reason-footer-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+  			 <p class="reason-footer-text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
   			 	<div class="search-form">
-  			 		<p>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</p>
+  			 		<button type="button" class="button button-dark button-search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
   			 		<form class="hotels-search-action" method="get" action="https:echo.htmlacademy.ru">
   			 			<div class="search-form-row">
   			 				<label for="entry-date">ДАТА ЗАЕЗДА</label>
@@ -118,7 +121,7 @@
   			 						<button class="button-decrease" type="button">+</button>
   			 					</div>
   			 			</div>
-  			 			<input type="submit" value="НАЙТИ">
+  			 			<input class="button button-search" type="submit" value="НАЙТИ">
   			 		</form>
   			 	</div>	
   			<img class="map-sedona" src="img/map.jpg" width="1200" height="475" alt="Карта Седоны">
@@ -127,11 +130,11 @@
   	<footer class="main-footer">
   		<a class="footer-hashtag" href="#">#VISITSEDONA</a>
   			<ul class="social-list">
-  				<li><a href="#">Tvitter</a></li>
-  				<li><a href="#">Facebook</a></li>
-  				<li><a href="#">YourTube</a></li>
+  				<li><a class="twitter" href="#">Twitter</a></li>
+  				<li><a class="facebook" href="#">Facebook</a></li>
+  				<li><a class="youtube" href="#">YouTube</a></li>
   			</ul>
-        <a href="https://htmlacademy.ru"><img src="URL" alt="html academy"</a>
+        <a class="logo-htmlacademy" href="https://htmlacademy.ru">WEBSITE BY<img src="URL" alt="html academy"></a>
   	</footer>
    </body>
 </html>
