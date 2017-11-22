@@ -1,32 +1,26 @@
 body{
-	margin:0;
+    margin:0 auto;
 	padding:0;
-
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 	color: #000000;
 	text-transform: uppercase;
-
 	background-color: #ffffff;
+    width:1200px;
 }
 
 a{
 	text-decoration: none;
-	color: #000000;
 }
 
-a:hover{
-	color: #81b3d2;
+.main-nav-list li,
+.main-footer li,
+.hotels-sort li,
+.hotels-choice li{
+	list-style-type: none;
 }
-a:focus{
-	color: #b2b2b2;
-}
-a:active{
-	color: #766357;
-}
-
 .main-nav-list a{
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
@@ -37,11 +31,40 @@ a:active{
 
 	background-color: #ffffff;
 }
+.main-nav-list a:hover{
+	color: #81b3d2;
+}
+.main-nav-list a:focus{
+	color: #b2b2b2;
+}
+.main-nav-list a:active{
+	color: #766357;
+}
 
-.main-foto{
-	background-image: url("background.jpg");
+.hero-section {
+	background-image: url("../img/background.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+	background-color: #d5e6f0;
+	height: 510px;
+	text-align: center;
+	line-height: 0;
+}
+
+.hero-section::after {
+    display: block;
+    content: "";
+    height: 57px;
+	background-image: url("../img/shape 1.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	margin-top: -57px;
+}
+
+.hero-section h1 {
+	margin:0;
+	line-height:0;
+	visibility:hidden;
 }
 
 .reason-main-title{
@@ -50,9 +73,7 @@ a:active{
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
-	text-transform: uppercase;
-
-	background-color: #ffffff;
+	text-transform: uppercase
 }
 
 .reason-main-text{
@@ -62,8 +83,6 @@ a:active{
 	font-weight: 400;
 	color: #000000;
 	text-transform: uppercase;
-
-	background-color: #ffffff;
 }
 
 .reason-title{
@@ -73,8 +92,6 @@ a:active{
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
-
-	background-color: #ffffff;
 }
 
 .reason-text{
@@ -84,8 +101,6 @@ a:active{
 	font-weight: 400;
 	color: #000000;
 	text-transform: uppercase;
-
-	background-color: #ffffff;
 }
 
 .reason-title-white,
@@ -101,24 +116,30 @@ a:active{
 }
 
 .reason-title-icon1::before{
+	display: block;
 	content: "";
-	background-image: url("icon-1.svg");
+	background-image: url("../img/icon-1.svg");
 	background-repeat: no-repeat;
-	background-position: 50% 0;
+	background-position: 50% 50%;
+	height: 76px;
 }
 
 .reason-title-icon2::before{
+	display: block;
 	content: "";
-	background-image: url("icon-2.svg");
+	background-image: url("../img/icon-2.svg");
 	background-repeat: no-repeat;
-	background-position: 50% 0;
+	background-position: 50% 50%;
+	height: 76px;
 }	
 
 .reason-title-icon3::before{
+	display: block;
 	content: "";
-	background-image: url("icon-3.svg");
+	background-image: url("../img/icon-3.svg");
 	background-repeat: no-repeat;
-	background-position: 50% 0;
+	background-position: 50% 50%;
+	height: 76px;
 }
 
 .reason-footer-title{
@@ -128,8 +149,6 @@ a:active{
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
-
-	background-color: #ffffff;
 }
 
 .reason-footer-text{
@@ -139,8 +158,6 @@ a:active{
 	font-weight: 400;
 	color: #000000;
 	text-transform: uppercase;
-
-	background-color: #ffffff;
 }
 
 .search-form-row{
@@ -230,7 +247,7 @@ a:active{
 	text-transform: uppercase;
 
 	background-color: #749ec1;
-	background-image: url("background2.jpg");
+	background-image: url("../img/background2.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
@@ -251,8 +268,6 @@ a:active{
 	font-weight: 400;
 	color: #b2b2b2;
 	text-transform: uppercase;
-
-	background-color: #ffffff;
 }
 
 .hotels-sort a:hover{
@@ -274,8 +289,6 @@ a:active{
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
-
-	background-color: #ffffff;
 }
 
 .hotel-title:hover{
@@ -293,8 +306,6 @@ a:active{
 	font-weight: 400;
 	color: #000000;
 	text-transform: uppercase;
-
-	background-color: #ffffff;
 }
 
 .hotel-text-blue{
@@ -302,10 +313,17 @@ a:active{
 }
 
 .social-list a{
+	display:block;
 	width: 48px;
 	height: 48px;
+	text-align: center;
+	line-height: 48px;
+	font-size: 0;
 
 	background-color: #82b3d3;
+}
+.social-list a img {
+	vertical-align: middle;
 }
 .social-list a:hover{
 	background-color: #669ec0;
@@ -313,45 +331,28 @@ a:active{
 .social-list a:active{
 	background-color: #5496bd;
 }
+.social-list a:active img {
+	opacity: 0.8;
+}
 
-.twitter{
-	background-image: url("twitter.svg");
-	background-position: center center;
-}
-.twitter:active{
-	background-image: url("twitter-dark.svg");
-	background-position: center center;
-}
-.facebook{
-	background-image: url("fb-icon.svg");
-	background-position: center center;
-}
-.facebook:active{
-	background-image: url("fb-icon-dark.svg");
-	background-position: center center;
-}	
-.YouTube{
-	background-image: url("youtube.svg");
-	background-position: center center;
-}
-.YouTube:active{
-	background-image: url("youtube-dark.svg");
-	background-position: center center;
-}
 .logo-htmlacademy{
+	display: block;
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
-	line-height: 21px;
+	line-height: 41px;
 	font-weight: 400;
 	color: #000000;
 	text-transform: uppercase;
 
-	background-color: #ffffff;
-	background-image: url("logo-htmlacademy.svg");
+	background-image: url("../img/logo-htmlacademy.png");
+	background-position: 100% 0;
+	background-repeat: no-repeat;
+	padding-right: 120px;
+	width: 75px;
 }
 .logo-htmlacademy:hover{
-	background-image: url("logo-htmlacademy-blue.svg");
+	background-position: 100% -41px;
 }
 .logo-htmlacademy:focus{
-	background-image: url("logo-htmlacademy-grey.svg");
+	background-position: 100% 100%;
 }
