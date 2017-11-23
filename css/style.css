@@ -15,12 +15,10 @@ a{
 	text-decoration: none;
 }
 
-.main-nav-list li,
-.main-footer li,
-.hotels-sort li,
-.hotels-choice li{
+.main-nav-list li{
 	list-style-type: none;
 }
+
 .main-nav-list a{
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
@@ -28,8 +26,6 @@ a{
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
-
-	background-color: #ffffff;
 }
 .main-nav-list a:hover{
 	color: #81b3d2;
@@ -228,7 +224,7 @@ a{
 }
 
 .button-transperent{
-	background: rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.1);
 	border: 2px solid #ffffff;
 }
 
@@ -261,6 +257,9 @@ a{
 	border-color: #ffffff;
 }
 
+.hotels-sort li{
+	list-style-type: none;
+}
 .hotels-sort a{
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 12px;
@@ -282,6 +281,9 @@ a{
 	color: #81b3d2;
 }
 
+.hotels-choice li{
+	list-style-type: none;
+}
 .hotel-title{
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 21px;
@@ -312,6 +314,9 @@ a{
 	background-color: #f2f2f2;
 }
 
+.main-footer li{
+	list-style-type: none;
+}
 .social-list a{
 	display:block;
 	width: 48px;
@@ -354,5 +359,42 @@ a{
 	background-position: 100% -41px;
 }
 .logo-htmlacademy:focus{
+	background-position: 100% 100%;
+}
+
+.arrow{
+	display: block;
+	width: 22px;
+	height: 12px;
+}
+.arrow-up{
+	display: block;
+	width: 10px;
+	height: 10px;
+
+	background-image: url("../img/arrow-up.png");
+	background-position: 100% 0;
+	background-repeat: no-repeat;
+	
+}
+.arrow-up:hover{
+	background-position: 100% -10px;
+}
+.arrow-up:focus{
+	background-position: 100% 100%;
+}
+.arrow-down{
+	display: block;
+	width: 10px;
+	height: 10px;
+
+	background-image: url("../img/arrow-down.png");
+	background-position: 100% 0;
+	background-repeat: no-repeat;
+}
+.arrow-down:hover{
+	background-position: 100% -10px;
+}
+.arrow-down:focus{
 	background-position: 100% 100%;
 }
