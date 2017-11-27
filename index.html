@@ -25,17 +25,20 @@
   			<img class="hero-section-image" src="img/main-foto1.png" width="1200" height="510" alt="Фото Седоны">
   		</section>
   		<section class="reasons">
+        <div class="reason-main">
   		  		<h2 class="reason-main-title">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
   				<p class="reason-main-text">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД-КАНЬОН!</p>
+        </div>  
   			<div class="reasons-list">
   				<div class="reasons-list-row">
   					<div class="reason">
-  						<div class="reason-inner">
-  							<b class="reason-title reason-title-white">НАСТОЯЩИЙ ГОРОДОК</b>
+  						<div class="reason-inner reason-inner-white">
+  							<b class="reason-title reason-title-white">НАСТОЯЩИЙ</b></br>
+                <b class="reason-title reason-title-white">ГОРОДОК</b></br>
   							<span class="reason-text reason-text-white">- №1 -</span>
   							<p class="reason-text reason-text-white">СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-            			</div>
-            				<img class="sedona-foto" src="img/reason1.jpg" width="800" height="255" alt="Фото Седона">
+            	</div>
+            		<img class="sedona-foto" src="img/reason1.jpg" width="800" height="255" alt="Фото Седона">
   					</div>
   				</div>
   				<div class="reasons-list-row">
@@ -61,8 +64,8 @@
   				<div class="reasons-list-row">
   					<div class="reason">
   						<img class="sedona-foto" src="img/reason2.jpg" width="800" height="255" alt="Фото Седона">
-  						<div class="reason-inner">
-  							<b class="reason-title reason-title-white">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</b>
+  						<div class="reason-inner reason-inner-white">
+  							<b class="reason-title reason-title-white">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</b></br>
   							<span class="reason-text reason-text-white">- №2 -</span>
   							<p class="reason-text reason-text-white">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
             			</div>	
@@ -70,22 +73,22 @@
   				</div>
   				<div class="reasons-list-row">
   					<div class="reason">
-  						<div class="reason-inner">
-  							<b class="reason-title reason-title-grey">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
+  						<div class="reason-inner reason-inner-grey">
+  							<b class="reason-title reason-title-grey">НЕБОЛЬШАЯ ПЛОЩАДЬ</b></br>
   							<span class="reason-text reason-text-grey">- №3 -</span>
   							<p class="reason-text reason-text-grey">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
   						</div>
   					</div>
   					<div class="reason">
-  						<div class="reason-inner">
-  							<b class="reason-title reason-title-grey">КРАСИВАЯ ДОРОГА</b>
+  						<div class="reason-inner reason-inner-grey">
+  							<b class="reason-title reason-title-grey">КРАСИВАЯ ДОРОГА</b></br>
   							<span class="reason-text reason-text-grey">- №4 -</span>
   							<p class="reason-text reason-text-grey">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
   						</div>
   					</div>
   					<div class="reason">
-  						<div class="reason-inner">
-  							<b class="reason-title reason-title-grey">МАЛО ТУРИСТОВ</b>
+  						<div class="reason-inner reason-inner-grey">
+  							<b class="reason-title reason-title-grey">МАЛО ТУРИСТОВ</b></br>
   							<span class="reason-text reason-text-grey">- №5 -</span>
   							<p class="reason-text reason-text-grey">БОЛЬШИНСТВО ЕДЕТ В ГРАНД-КАНЬОН И ТОЛПИТСЯ ТАМ</p>
   						</div>
@@ -101,24 +104,24 @@
   			 		<form class="hotels-search-action" method="get" action="https:echo.htmlacademy.ru">
   			 			<div class="search-form-row">
   			 				<label for="entry-date">ДАТА ЗАЕЗДА</label>
-  			 				<input type="date" name="entry-date" id="entry-date">
+  			 				<input type="date" name="entry-date" id="entry-date" class="entry-date">
   			 			</div>
   			 			<div class="search-form-row">
   			 				<label for="departure-date">ДАТА ВЫЕЗДА</label>
-  			 				<input type="date" name="departure-date" id="departure-date">
+  			 				<input type="date" name="departure-date" id="departure-date" class="departure-date">
   			 			</div>
   			 			<div class="search-form-row">
   			 				<label for="adult-count">ВЗРОСЛЫЕ</label>
   			 					<div class="button-sign">
   			 						<button class="button-decrease" type="button">-</button>
-  			 						<input type="number" name="adult-count" id="adult-count">
-  			 						<button class="button-decrease" type="button">+</button>
+  			 						<input type="text" name="adult-count" id="adult-count">
+  			 						<button class="button-increase" type="button">+</button>
   			 					</div>
-  			 				<label for="children-count">ДЕТИ</label>
+  			 				<label for="children-count" class="children-count">ДЕТИ</label>
   			 					<div class="button-sign">
   			 						<button class="button-decrease" type="button">-</button>
-  			 						<input type="number" name="children-count" id="children-count">
-  			 						<button class="button-decrease" type="button">+</button>
+  			 						<input type="text" name="children-count" id="children-count">
+  			 						<button class="button-increase" type="button">+</button>
   			 					</div>
   			 			</div>
   			 			<input class="button button-search" type="submit" value="НАЙТИ">

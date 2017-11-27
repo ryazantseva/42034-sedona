@@ -88,6 +88,7 @@ a{
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
+	width: 130px;
 }
 
 .reason-text{
@@ -103,12 +104,6 @@ a{
 .reason-text-white{
 	color: #ffffff;
 
-	background-color: #81b3d2;
-}
-
-.reason-title-grey,
-.reason-text-grey{
- 	background-color: #eeeeee;
 }
 
 .reason-title-icon1::before{
@@ -118,6 +113,7 @@ a{
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	height: 76px;
+	margin-bottom: 28px;
 }
 
 .reason-title-icon2::before{
@@ -127,6 +123,7 @@ a{
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	height: 76px;
+	margin-bottom: 28px;
 }	
 
 .reason-title-icon3::before{
@@ -136,6 +133,7 @@ a{
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	height: 76px;
+	margin-bottom: 28px;
 }
 
 .reason-footer-title{
@@ -177,6 +175,85 @@ a{
 	border-color: #e5e5e5;
 }
 
+.search-form {
+    width: 570px;
+    margin: 0 auto -393px;
+    height: 480px;
+    background: #fff;
+    position: relative;
+}
+.search-form .button-dark {
+	line-height: 88px;
+	width: 100%;
+}
+
+.hotels-search-action {
+    padding: 56px;
+}
+
+.search-form-row {
+    margin-bottom: 30px;
+	line-height: 38px;
+	font-size: 0;
+}
+.search-form-row label {
+    font-size: 14px;
+	width: 112px;
+	display: inline-block;
+    vertical-align: middle;
+}
+.search-form-row label.children-count {
+	width: 65px;
+	padding-left: 53px;
+}
+.entry-date,
+.departure-date {
+    height: 38px;
+    width: 346px;
+    border: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+	padding: 0 9px;
+	box-sizing: border-box;
+}
+.button-sign {
+    display: inline-block;
+    width: 114px;
+    vertical-align: middle;
+	background: #f2f2f2;
+}
+.hotels-search-action .button-search{
+	width: 458px;
+	height: 48px;
+	margin-top: 24px;
+	cursor: pointer;
+}
+.button-sign button {
+    width: 38px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 38px;
+    border: 0;
+    font-size: 22px;
+    line-height: 38px;
+}
+.button-sign input {
+	width: 38px;
+	font-size: 14px;
+	border: 0;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0;
+	height: 38px;
+	text-align: center;
+}
+.button-sign input:focus,
+.search-form .search-form-row .entry-date:focus,
+.search-form .search-form-row .departure-date:focus {
+    background: inherit;
+}
 .button{
 	font: inherit;
 
@@ -212,7 +289,8 @@ a{
 	font-weight: 700;
 }
 
-.button-decrease{
+.button-decrease,
+.button-increase{
 	color: #a9a9a9;
 }
 
@@ -246,11 +324,6 @@ a{
 	background-image: url("../img/background2.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-}
-
-.hotels-parameters input,
-.hotels-parameters input:hover{
-	border-color: #ffffff;
 }
 
 .cost{
@@ -314,19 +387,60 @@ a{
 	background-color: #f2f2f2;
 }
 
+.arrow{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	vertical-align: middle;
+	border: none;
+	padding: 0px;
+
+	background-image: url("../img/arrows.png");
+	background-position: 100% 0;
+	background-repeat: no-repeat;
+
+}
+
+.arrow-up:hover{
+	background-position: 100% -10px;
+}
+.arrow-up:focus{
+	background-position: 100% -20px;
+}
+.arrow-down{
+	background-position: 100% -30px;
+}
+.arrow-down:hover{
+	background-position: 100% -40px;
+}
+.arrow-down:focus{
+	background-position: 100% -50px;
+}
+.reason-inner{
+	text-align: center;
+	width: 400px;
+	height: 200px;
+	padding-top: 55px;
+}
+.reason-inner-white{
+	background-color: #81b3d2;
+}
+.reason-inner-grey{
+	background-color: #eeeeee;
+}
+
+.reason-main{
+	display: block;
+	width: 500px;
+	height: 95px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
 .main-footer li{
 	list-style-type: none;
-}
-.social-list a{
-	display:block;
-	width: 48px;
-	height: 48px;
-	text-align: center;
-	line-height: 48px;
-	font-size: 0;
+} 
 
-	background-color: #82b3d3;
-}
 .social-list a img {
 	vertical-align: middle;
 }
@@ -359,42 +473,5 @@ a{
 	background-position: 100% -41px;
 }
 .logo-htmlacademy:focus{
-	background-position: 100% 100%;
-}
-
-.arrow{
-	display: block;
-	width: 22px;
-	height: 12px;
-}
-.arrow-up{
-	display: block;
-	width: 10px;
-	height: 10px;
-
-	background-image: url("../img/arrow-up.png");
-	background-position: 100% 0;
-	background-repeat: no-repeat;
-	
-}
-.arrow-up:hover{
-	background-position: 100% -10px;
-}
-.arrow-up:focus{
-	background-position: 100% 100%;
-}
-.arrow-down{
-	display: block;
-	width: 10px;
-	height: 10px;
-
-	background-image: url("../img/arrow-down.png");
-	background-position: 100% 0;
-	background-repeat: no-repeat;
-}
-.arrow-down:hover{
-	background-position: 100% -10px;
-}
-.arrow-down:focus{
 	background-position: 100% 100%;
 }
