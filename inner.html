@@ -42,16 +42,22 @@
             <label for="apartments">АПАРТАМЕНТЫ</label>
           </fieldset>
           <fieldset>
-            <legend>СТОИМОСТЬ В СУТКИ (Р):
-              <div>
-                <span class="cost">ОТ 0</span>
-                <span class="cost">ДО 3000</span>
-              </div>
-            </legend>
-            <input type="range" min="0" max="3000" step="1">
+            <legend>СТОИМОСТЬ В СУТКИ (Р):</legend>
+            <div class="multirange-value">
+                <label class="cost min-cost">ОТ 0<input type="text" name="min-price" value="0"></label>
+                <label class="cost max-cost">ДО 3000<input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+          </div>
+            <button type="button" class="button button-transperent">Показать</button>
           </fieldset>
         </form>
-        <button type="button" class="button button-transperent">Показать</button>
+        
       </section>
       <section class="hotels-sort">
         <b class="hotel-title">НАЙДЕНО: 3</b>
@@ -74,8 +80,10 @@
                 <b class="hotel-title">AMARA RESORT & SPA</b>
                 <span class="hotel-text">ГОСТИНИЦА</span>
                 <span class="hotel-text">ОТ 4000 Р.</span>
-                <a class="button" href="#">ПОДРОБНЕЕ</a>
-                <a class="button button-dark" href="#">ЗАБРОНИРОВАТЬ</a>
+                <div class="hotels-buttons">
+                  <a class="button button-blue" href="#">ПОДРОБНЕЕ</a>
+                  <a class="button button-dark" href="#">ЗАБРОНИРОВАТЬ</a>
+                </div>
               </div>  
               <div class="hotel-rating">
                 <span class="hotel-rating-stars">
@@ -93,8 +101,10 @@
                 <b class="hotel-title">DESERT QUAIL INN</b>
                 <span class="hotel-text">МОТЕЛЬ</span>
                 <span class="hotel-text">ОТ 3000 Р.</span>
-                <a class="button" href="#">ПОДРОБНЕЕ</a>
-                <a class="button button-dark" href="#">ЗАБРОНИРОВАТЬ</a>
+                <div class="hotels-buttons">
+                  <a class="button button-blue" href="#">ПОДРОБНЕЕ</a>
+                  <a class="button button-dark" href="#">ЗАБРОНИРОВАТЬ</a>
+                </div>
               </div>
               <div class="hotel-rating">
                 <img src="img/star.svg" alt="Количество звезд">
@@ -109,8 +119,10 @@
                 <b class="hotel-title">VILLAS AT POCO DIABLO</b>
                 <span class="hotel-text">АПАРТАМЕНТЫ</span>
                 <span class="hotel-text">ОТ 2000 Р.</span>
-                <a class="button" href="#">ПОДРОБНЕЕ</a>
-                <a class="button button-dark" href="#">ЗАБРОНИРОВАТЬ</a>
+                <div class="hotels-buttons">
+                  <a class="button button-blue" href="#">ПОДРОБНЕЕ</a>
+                  <a class="button button-dark" href="#">ЗАБРОНИРОВАТЬ</a>
+                </div>
               </div>
               <div class="hotel-rating">
                 <img src="img/star.svg" alt="Количество звезд">
