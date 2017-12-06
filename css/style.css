@@ -203,10 +203,12 @@ a{
 }
 
 .button-blue{
+    box-sizing: border-box;
 	height: 27px;
 }
 
 .button-dark{
+    box-sizing: border-box;
 	background-color: #766357;
 	width: 142px;
 	height: 27px;
@@ -582,6 +584,7 @@ a{
 	justify-content: flex-start;
 	align-items: center;
 	padding: 0 73px;
+    margin-bottom: 20px;
 }
 
 .hotel-sort-title{
@@ -603,6 +606,7 @@ a{
     align-items: flex-start;
 	
 	width: 350px;
+    height: 15px;
 	margin: 0;
     padding-left: 0;
     margin-left: 30px;
@@ -614,7 +618,7 @@ a{
 
 .sort{
     font-size: 12px;
-    line-height: 18px;
+    line-height: 21px;
     font-weight: 400;
     color: #000;
 }
@@ -646,7 +650,7 @@ a{
 .hotel-title{
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 21px;
-	line-height: 49px;
+	line-height: 20px;
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
@@ -680,7 +684,6 @@ a{
 .hotel-rating-text{
 	background-color: #f2f2f2;
 	text-align: center;
-	margin-bottom: 30px;
 }
 
 .hotels-buttons{
@@ -794,14 +797,6 @@ a{
 	background-position: 100% 100%;
 }
 
-/*.main-nav-list{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	height: 55px;
-    margin: 0;
-    padding-left: 0;
-}*/
 .reason-main{
 	display: flex;
     flex-direction: column;
@@ -848,35 +843,47 @@ a{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	padding: 0 73px;
+    padding-left: 0;
+    margin: 0;
 }
 
 .hotel-info{
-	display: inline-block;
+	display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
 	margin-left: 30px;
 	width: 500px;
-	height: 90px;
+	min-height: 90px;
 }
+
 
 .hotel-rating{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-left: auto;
 	height: inherit;
 }
 
 .hotel-rating-stars{
 	text-align: right;
-	margin-top: 30px;
 }
 
 .hotel{
 	display: flex;
 	align-items: center;
-	height: 153px;
+	min-height: 151px;
+    padding: 0 73px;
+    box-sizing: border-box;
+
 
 	border-bottom: 2px solid #eee;
+    border-top: 2px solid transparent;
 }
+
+.hotel:first-of-type{
+    border-top: 2px solid #eee;
+}
+
 
 
