@@ -93,7 +93,9 @@ a{
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
-	text-transform: uppercase
+	text-transform: uppercase;
+    text-align: center;
+    width: 550px;
 }
 
 .reason-main-text{
@@ -106,12 +108,17 @@ a{
 }
 
 .reason-title{
+    display: block;
+    box-sizing: border-box;
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: 700;
 	color: #000000;
-	text-transform: uppercase;	
+	text-transform: uppercase;
+    width: 400px;
+    padding: 0 95px;
+
 }
 
 .reason-text{
@@ -127,6 +134,10 @@ a{
 .reason-text-white{
 	color: #ffffff;
 
+}
+
+.reason-title-grey{
+    padding: 0 120px;
 }
 
 .reason-title-icon1::before{
@@ -495,7 +506,7 @@ a{
 	
 }
 
-.infrastructure input[type="checkbox"]:checked ~ label::before{
+.infrastructure input[type="checkbox"]:checked + label::before{
 	content: "";
 	position: absolute;
 	background-image: url("../img/checkbox-on.svg");
@@ -657,7 +668,7 @@ a{
 	text-transform: uppercase;
 
 	display: block;
-	width: 230px;
+	min-width: 230px;
 	margin: 0;
 }
 
@@ -697,43 +708,17 @@ a{
 }
 
 .arrows{
-	display: flex;
+	display: block;
 	margin-left: auto;
 	height: 10px;
 }
 
-.arrow{
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	vertical-align: middle;
-	border: none;
-	padding: 0px;
-	margin-right: 13px;
-
-	background-image: url("../img/arrows.png");
-	background-position: 100% 0;
-	background-repeat: no-repeat;
+svg path:hover{
+    fill: #231F20;
 }
 
-.arrow:last-child{
-	margin-right: 0;
-}
-
-.arrow-up:hover{
-	background-position: 100% -10px;
-}
-.arrow-up:focus{
-	background-position: 100% -20px;
-}
-.arrow-down{
-	background-position: 100% -30px;
-}
-.arrow-down:hover{
-	background-position: 100% -40px;
-}
-.arrow-down:focus{
-	background-position: 100% -50px;
+svg path:active{
+    fill: #81b3d2;
 }
 
 .reason-inner{
