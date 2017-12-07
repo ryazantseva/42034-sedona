@@ -67,24 +67,28 @@ a{
 }
 
 .hero-section {
+    position: relative;
 	background-image: url("../img/background.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-color: #d5e6f0;
-	height: 510px;
+	height: 508px;
 	text-align: center;
 	line-height: 0;
-    margin-bottom: 41px;
+    margin-bottom: 43px;
 }
 
 .hero-section::after {
     display: block;
+    position: absolute;
     content: "";
     height: 57px;
 	background-image: url("../img/shape 1.png");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	margin-top: -57px;
+    bottom: 1px;
+    left: 0;
+    width: 1200px;
 }
 
 .visually-hidden {
@@ -291,7 +295,7 @@ a{
 	position: absolute;
 	width: 23px;
 	height: 24px;
-	top: 25%;
+	top: 20%;
 	left: 93%;
 
 	background-image: url("../img/calendar-grey.svg");
@@ -325,7 +329,7 @@ a{
 
 .search-form-row {
 	position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 	line-height: 38px;
 	font-size: 0;
 }
@@ -357,13 +361,19 @@ a{
     vertical-align: middle;
 	background: #f2f2f2;
 }
+
+.hotels-search{
+    margin-bottom: -8px;
+}
+
 .hotels-search-action .button-search{
 	width: 458px;
-	height: 48px;
-	margin-top: 24px;
+	height: 58px;
+	margin-top: 54px;
 	cursor: pointer;
-	line-height: 26px;
+	line-height: 51px;
 	font-weight: 700;
+    font-size: 21px;
     
 }
 .button-sign button {
@@ -672,6 +682,18 @@ a{
     color: #000;
 }
 
+.hotels-sort-list li .sort{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.sort-active,
+.sort-active:hover,
+.sort-active:focus{
+    text-decoration: none;
+    color: #81b3d2;
+}
+
 .hotels-sort a{
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 12px;
@@ -745,9 +767,11 @@ a{
 }
 
 .arrows{
-	display: block;
+	display: flex;
+    justify-content: space-between;
 	margin-left: auto;
 	height: 10px;
+    width: 35px;
 }
 
 svg path:hover{
@@ -878,6 +902,7 @@ svg path:active{
 .logo{
 	position: absolute;
 	left: 50%; top: 0;
+    z-index: 50;
 	transform: translateX(-50%);
 }
 
