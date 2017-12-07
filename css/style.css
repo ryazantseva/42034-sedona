@@ -687,9 +687,9 @@ a{
     text-decoration-style: dotted;
 }
 
-.sort-active,
-.sort-active:hover,
-.sort-active:focus{
+.hotels-sort-list li .sort-active,
+.hotels-sort-list li .sort-active:hover,
+.hotels-sort-list li .sort-active:focus{
     text-decoration: none;
     color: #81b3d2;
 }
