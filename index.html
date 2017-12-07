@@ -8,6 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="body-shadow">
   	<header class="main-header">
   		<nav class="main-nav">
   		<a href="index.html"><img class="logo" src="img/logo.png" width="135" height="70" alt="Логотип Седоны"></a>
@@ -44,19 +45,19 @@
   					<div class="reason">
   						<div class="reason-inner">
   							<b class="reason-title reason-title-icon reason-title-icon1">ЖИЛЬЕ</b>
-  							<p class="reason-text">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+  							<p class="reason-text reason-text-icon">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
   						</div>
   					</div>
   					<div class="reason">
   						<div class="reason-inner">
   							<b class="reason-title reason-title-icon reason-title-icon2">ЕДА</b>
-  							<p class="reason-text">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+  							<p class="reason-text reason-text-icon">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
   						</div>
   					</div>
   					<div class="reason">
   						<div class="reason-inner">
   							<b class="reason-title reason-title-icon reason-title-icon3">СУВЕНИРЫ</b>
-  							<p class="reason-text">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+  							<p class="reason-text reason-text-icon" >НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
   						</div>
   					</div>
   				</div>
@@ -99,19 +100,19 @@
   		<section class="hotels-search">
         <div class="hotels-search-text">
   			<h2 class="reason-footer-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-  			 <p class="reason-footer-text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+  			 <p class="reason-footer-text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
         </div> 
   			 	<div class="search-form">
   			 		<div class="button button-dark button-search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</div>
   			 		<form class="hotels-search-action" method="get" action="https:echo.htmlacademy.ru">
   			 			<div class="search-form-row">
   			 				<label for="entry-date">ДАТА ЗАЕЗДА</label>
-  			 				<input type="date" name="entry-date" id="entry-date" class="entry-date">
+  			 				<input type="text" name="entry-date" id="entry-date" class="entry-date" value="24 АПРЕЛЯ 2017">
                 <button class="calendar-button" type="button"></button>
   			 			</div>
   			 			<div class="search-form-row">
   			 				<label for="departure-date">ДАТА ВЫЕЗДА</label>
-  			 				<input type="date" name="departure-date" id="departure-date" class="departure-date">
+  			 				<input type="text" name="departure-date" id="departure-date" class="departure-date" value="4 ИЮЛЯ 2017">
                 <button class="calendar-button" type="button"></button>
   			 			</div>
   			 			<div class="search-form-row">
@@ -149,5 +150,6 @@
   			</ul>
         <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">WEBSITE BY</a>
   	</footer>
+  	</div>
    </body>
 </html>

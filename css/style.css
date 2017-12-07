@@ -9,6 +9,11 @@ body{
 	text-transform: uppercase;
 	background-color: #ffffff;
     width:1200px;
+    padding: 0 40px;
+}
+
+.body-shadow{
+    box-shadow: 0 0 40px 2px #dbdbdb;
 }
 
 a{
@@ -69,6 +74,7 @@ a{
 	height: 510px;
 	text-align: center;
 	line-height: 0;
+    margin-bottom: 41px;
 }
 
 .hero-section::after {
@@ -118,7 +124,7 @@ a{
 	text-transform: uppercase;
     width: 400px;
     padding: 0 95px;
-
+    
 }
 
 .reason-text{
@@ -130,14 +136,36 @@ a{
 	text-transform: uppercase;
 }
 
+.reason-text-icon{
+    padding: 0 50px;
+}
+
 .reason-title-white,
 .reason-text-white{
 	color: #ffffff;
+    margin-bottom: 25px;
 
+}
+
+.reason-text-white{
+    padding: 0 45px;
+    margin: 0;
+    margin-top: 20px;
+    line-height: 22px;
+}
+
+.reason-text-grey{
+    padding: 0 60px;
+    margin-top: 22px;
 }
 
 .reason-title-grey{
     padding: 0 120px;
+    margin-bottom: 26px;
+}
+
+.reason-title-icon{
+    margin-bottom: 27px;
 }
 
 .reason-title-icon1::before{
@@ -177,6 +205,8 @@ a{
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
+    margin-top: 53px;
+    margin-bottom: 0;
 }
 
 .reason-footer-text{
@@ -186,6 +216,9 @@ a{
 	font-weight: 400;
 	color: #000000;
 	text-transform: uppercase;
+    text-align: center;
+    margin-top: 23px;
+    margin-bottom: 0;
 }
 
 .button{
@@ -278,9 +311,12 @@ a{
     
 }
 .search-form .button-dark {
-	line-height: 88px;
+	line-height: 86px;
 	width: 100%;
 	height: 88px;
+    
+    font-size: 21px;
+    font-weight: bold;
 }
 
 .hotels-search-action {
@@ -328,6 +364,7 @@ a{
 	cursor: pointer;
 	line-height: 26px;
 	font-weight: 700;
+    
 }
 .button-sign button {
     width: 38px;
@@ -722,16 +759,19 @@ svg path:active{
 }
 
 .reason-inner{
+    box-sizing: border-box;
 	text-align: center;
 	width: 400px;
-	height: 200px;
+	height: 256px;
 	padding-top: 55px;
 }
 .reason-inner-white{
 	background-color: #81b3d2;
+    padding-top: 48px;
 }
 .reason-inner-grey{
 	background-color: #eeeeee;
+    padding-top: 48px;
 }
 
 .main-footer li{
@@ -797,13 +837,15 @@ svg path:active{
 	display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 37px;
+}
 
-}
-.hero-section{
-	margin-bottom: 30px;
-}
 .reasons-list-row{
 	display: flex;
+}
+
+.reasons-list-row:nth-of-type(2){
+    margin-bottom: 73px;
 }
 
 .main-footer{
@@ -818,6 +860,7 @@ svg path:active{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+    margin-bottom: 46px;
 }
 .reason{
 	display: flex;
