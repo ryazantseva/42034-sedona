@@ -311,7 +311,8 @@ a {
   background-color: #ffffff;
   border-color: #e5e5e5;
   border: 2px solid #e5e5e5;
-    outline: none;
+  outline: none;
+  padding-left: 7px;    
 }
 
 .search-form-row .adult-count-figure,
@@ -321,7 +322,10 @@ a {
   font-weight: 700;
 }
 
-
+.search-form-row .adult-count-figure:focus,
+.search-form-row .children-count-figure:focus{
+    padding-left: 0;
+}
 
 .calendar-button {
   position: absolute;
@@ -405,7 +409,7 @@ a {
 }
 
 
-.children-count-figure::-ms-clear{
+.search-form input::-ms-clear{
     display: none;
 }
 
