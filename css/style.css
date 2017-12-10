@@ -120,7 +120,7 @@ a {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  color: #000000;
+  color: #333333;
   text-transform: uppercase;
 }
 
@@ -136,6 +136,7 @@ a {
   text-transform: uppercase;
   width: 400px;
   padding: 0 95px;
+  margin-top: 0;
 }
 
 .reason-text {
@@ -143,7 +144,7 @@ a {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #000000;
+  color: #333333;
   text-transform: uppercase;
 }
 
@@ -161,16 +162,17 @@ a {
   padding: 0 45px;
   margin: 0;
   margin-top: 20px;
-  line-height: 22px;
+  line-height: 21px;
 }
 
 .reason-text-grey {
+  color: #333333;    
   padding: 0 60px;
   margin-top: 22px;
 }
 
 .reason-title-grey {
-  padding: 0 120px;
+  padding: 0 135px;
   margin-bottom: 26px;
 }
 
@@ -224,7 +226,7 @@ a {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  color: #000000;
+  color: #333333;
   text-transform: uppercase;
   text-align: center;
   margin-top: 23px;
@@ -298,6 +300,7 @@ a {
 
 .search-form-row input {
   background-color: #f2f2f2;
+  box-sizing: border-box;    
 }
 
 .search-form-row input:hover {
@@ -307,7 +310,8 @@ a {
 .search-form-row input:focus {
   background-color: #ffffff;
   border-color: #e5e5e5;
-  outline: 2px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
+    outline: none;
 }
 
 .search-form-row .adult-count-figure,
@@ -317,13 +321,7 @@ a {
   font-weight: 700;
 }
 
-.search-form-row .adult-count-figure:hover,
-.search-form-row .children-count-figure:hover {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-  background-color: #f2f2f2;
-}
+
 
 .calendar-button {
   position: absolute;
@@ -406,6 +404,11 @@ a {
   font-weight: 700;
 }
 
+
+.children-count-figure::-ms-clear{
+    display: none;
+}
+
 .button-sign {
   display: inline-block;
   width: 114px;
@@ -451,12 +454,13 @@ a {
 .button-sign input:focus,
 .search-form .search-form-row .entry-date:focus,
 .search-form .search-form-row .departure-date:focus {
-  background: inherit;
+  background: #fff;
 }
 
 .button-decrease,
 .button-increase {
   color: #a9a9a9;
+  background-color: #f2f2f2;
   border-radius: 0;
 }
 
@@ -567,6 +571,7 @@ a {
 }
 
 .infrastructure label {
+  display: block;
   position: relative;
   height: 25px;
   line-height: 27px;
@@ -741,7 +746,7 @@ a {
 
 .sort {
   font-size: 12px;
-  line-height: 21px;
+  line-height: 18px;
   font-weight: 400;
   color: #000;
 }
@@ -787,12 +792,13 @@ a {
 .hotel-title {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
-  line-height: 20px;
+  line-height: 26px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
   display: block;
   min-width: 230px;
+  height: 26px;
   margin: 0;
 }
 
@@ -810,10 +816,15 @@ a {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #000000;
+  color: #333333;
   text-transform: uppercase;
   display: inline-block;
   width: 113px;
+}
+
+.hotel-text-container{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .hotel-rating-text {
