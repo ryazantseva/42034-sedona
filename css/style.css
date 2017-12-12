@@ -586,7 +586,7 @@ a {
 
 .infrastructure label:active,
 .infrastructure label:focus{
-    border: none;
+    outline: none;
 }
 
 .infrastructure label:first-of-type {
