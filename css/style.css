@@ -9,12 +9,12 @@ body {
   text-transform: uppercase;
   background-color: #ffffff;
   width: 1200px;
-  padding: 0 40px;
+  padding: 0;
 }
 
 .body-shadow {
   -webkit-box-shadow: 0 0 40px 2px #dbdbdb;
-          box-shadow: 0 0 40px 2px #dbdbdb;
+  box-shadow: 0 0 40px 2px #dbdbdb;
 }
 
 a {
@@ -26,8 +26,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 55px;
   margin: 0;
   padding: 0 73px;
@@ -125,9 +125,8 @@ a {
 }
 
 .reason-title {
-  display: block;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 21px;
@@ -166,7 +165,7 @@ a {
 }
 
 .reason-text-grey {
-  color: #333333;    
+  color: #333333;
   padding: 0 60px;
   margin-top: 22px;
 }
@@ -262,13 +261,13 @@ a {
 
 .button-blue {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 27px;
 }
 
 .button-dark {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #766357;
   width: 142px;
   height: 27px;
@@ -300,7 +299,8 @@ a {
 
 .search-form-row input {
   background-color: #f2f2f2;
-  box-sizing: border-box;    
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .search-form-row input:hover {
@@ -312,7 +312,7 @@ a {
   border-color: #e5e5e5;
   border: 2px solid #e5e5e5;
   outline: none;
-  padding-left: 7px;    
+  padding-left: 7px;
 }
 
 .search-form-row .adult-count-figure,
@@ -323,8 +323,8 @@ a {
 }
 
 .search-form-row .adult-count-figure:focus,
-.search-form-row .children-count-figure:focus{
-    padding-left: 0;
+.search-form-row .children-count-figure:focus {
+  padding-left: 0;
 }
 
 .calendar-button {
@@ -369,7 +369,7 @@ a {
 .hotels-search-action {
   padding: 56px;
   -webkit-box-shadow: 0 7px 20px 7px rgba(0,0,0,0.15);
-          box-shadow: 0 7px 20px 7px rgba(0,0,0,0.15);
+  box-shadow: 0 7px 20px 7px rgba(0,0,0,0.15);
 }
 
 .search-form-row {
@@ -402,15 +402,14 @@ a {
   font-size: 14px;
   padding: 0 9px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
 }
 
-
-.search-form input::-ms-clear{
-    display: none;
+.search-form input::-ms-clear {
+  display: none;
 }
 
 .button-sign {
@@ -485,7 +484,7 @@ a {
 
 .button-transperent {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   min-width: 137px;
   min-height: 37px;
   line-height: 31px;
@@ -516,14 +515,14 @@ a {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 17px;
   padding-left: 73px;
   padding-top: 29px;
@@ -537,7 +536,7 @@ a {
   display: flex;
   width: 100%;
   margin-top: 0;
-  margin-bottom: 0;    
+  margin-bottom: 0;
 }
 
 .infrastructure fieldset {
@@ -546,11 +545,11 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 240px;
   margin: 0;
   padding: 0;
@@ -585,6 +584,11 @@ a {
   padding-left: 40px;
 }
 
+.infrastructure label:active,
+.infrastructure label:focus{
+    border: none;
+}
+
 .infrastructure label:first-of-type {
   margin-bottom: 19px;
   margin-top: 13px;
@@ -599,11 +603,11 @@ a {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 25px;
+  width: 27px;
   height: 25px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 0 50%;
 }
 
 .infrastructure label:disabled::before {
@@ -614,7 +618,6 @@ a {
   content: "";
   position: absolute;
   background-image: url("../img/checkbox-on.svg");
-  width: 26px;
 }
 
 .multirange-value {
@@ -636,10 +639,10 @@ a {
   margin: 0;
   padding: 0;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -ms-flex-preferred-size: 10px;
-      flex-basis: 10px;
+  flex-basis: 10px;
 }
 
 .cost:first-child {
@@ -679,7 +682,7 @@ a {
   border: 8px solid #ffffff;
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
@@ -703,14 +706,14 @@ a {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0 73px;
   margin-bottom: 20px;
 }
@@ -732,11 +735,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   width: 350px;
   height: 15px;
   margin: 0;
@@ -758,7 +761,7 @@ a {
 .hotels-sort-list li .sort {
   text-decoration: underline;
   -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted;
+  text-decoration-style: dotted;
 }
 
 .hotels-sort-list li .sort-active,
@@ -804,6 +807,7 @@ a {
   min-width: 230px;
   height: 26px;
   margin: 0;
+  margin-top: -3px;
 }
 
 .hotel-title:hover,
@@ -824,11 +828,13 @@ a {
   text-transform: uppercase;
   display: inline-block;
   width: 113px;
+  vertical-align: baseline;
 }
 
-.hotel-text-container{
-    margin-top: 0;
-    margin-bottom: 0;
+.hotel-text-container {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 4px;
 }
 
 .hotel-rating-text {
@@ -844,8 +850,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 258px;
 }
 
@@ -854,8 +860,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-left: auto;
   height: 10px;
   width: 35px;
@@ -877,7 +883,7 @@ a {
 
 .reason-inner {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   width: 400px;
   height: 256px;
@@ -892,6 +898,10 @@ a {
 .reason-inner-grey {
   background-color: #eeeeee;
   padding-top: 48px;
+}
+
+.sedona-foto {
+  background-color: #e0836d;
 }
 
 .main-footer li {
@@ -932,28 +942,32 @@ a {
 }
 
 .logo-htmlacademy {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 41px;
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
-  height: 41px;
-  background-image: url("../img/logo-htmlacademy.png");
-  background-position: 100% 0;
-  background-repeat: no-repeat;
-  padding-right: 120px;
-  width: 75px;
-  margin-right: 28px;
+  height: 37px;
+  width: 200px;
+  margin-right: 23px;
 }
 
-.logo-htmlacademy:hover {
-  background-position: 100% -41px;
+.logo-htmlacademy svg {
+  width: 108px;
+  height: 37px;
+  margin-left: 8px;
 }
 
-.logo-htmlacademy:focus {
-  background-position: 100% 100%;
+.logo-htmlacademy svg:hover path {
+  fill: #8bb9d6;
+}
+
+.logo-htmlacademy svg:active path {
+  fill: #c1c0c0;
 }
 
 .reason-main {
@@ -962,11 +976,11 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 37px;
 }
 
@@ -985,11 +999,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-height: 120px;
   margin-top: 1px;
   padding: 0 73px;
@@ -1001,11 +1015,11 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 46px;
 }
 
@@ -1020,14 +1034,14 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .main-header {
   position: relative;
   height: 55px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 1200px;
 }
 
@@ -1037,8 +1051,8 @@ a {
   top: 0;
   z-index: 50;
   -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .hotels-list {
@@ -1047,10 +1061,10 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding-left: 0;
   margin: 0;
 }
@@ -1061,11 +1075,11 @@ a {
   display: inline-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-left: 30px;
   width: 500px;
   min-height: 90px;
@@ -1077,11 +1091,11 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-left: auto;
   height: inherit;
 }
@@ -1098,12 +1112,12 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-height: 151px;
   padding: 0 73px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-bottom: 2px solid #eee;
   border-top: 2px solid transparent;
 }
